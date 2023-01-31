@@ -9,6 +9,7 @@ html
                 font-family: Arial, sans-serif;
                 padding: 20px;
             }
+            
 
             .column {
                 max-width: 400px;
@@ -18,7 +19,11 @@ html
 
             h1 {
                 font-size: 2.5em;
-                margin-bottom: 20px;
+                margin-top: 20px;
+                margin-left:auto;
+                margin-right:auto;
+                
+
             }
 
             form {
@@ -47,15 +52,17 @@ html
                 border-radius: 5px;
                 cursor: pointer;
             }
+
     body 
         .column.is-one-third 
-            h1.is-size-1 Newsletter 
+            h1.is-size-1 Zapisz sie na bezplatne konsultacje! 
             form(action="/newsletter" method="post") 
-            .field 
-                label.label E-mail 
-                .control 
-                    input(type="email" name="email" class="input" 
-                    placeholder="lukaszholderny@gmail.pl")
-            .field.is-grouped 
-                .control 
-                    button(type="submit" formmethod="post"  class="button" ) Sign up!
+                .field 
+                    label.label E-mail 
+                    .control 
+                        input(type="email" name="email" class="input" placeholder="Wpisz swojego maila!")
+                .field.is-grouped 
+                    .control 
+                        button(type="submit" formmethod="post"  class="button" ) Dolacz do nas!
+            
+            
