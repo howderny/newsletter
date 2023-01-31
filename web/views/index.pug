@@ -1,0 +1,61 @@
+doctype html 
+html 
+    head 
+        link(rel="stylesheet"
+        href="")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        style.
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+            }
+
+            .column {
+                max-width: 400px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 2.5em;
+                margin-bottom: 20px;
+            }
+
+            form {
+                margin-top: 20px;
+            }
+
+            label {
+                font-weight: bold;
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            input[type="email"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                font-size: 1.2em;
+                border: 1px solid lightgray;
+            }
+
+            button[type="submit"] {
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+    body 
+        .column.is-one-third 
+            h1.is-size-1 Newsletter 
+            form(action="/newsletter" method="post") 
+            .field 
+                label.label E-mail 
+                .control 
+                    input(type="email" name="email" class="input" 
+                    placeholder="lukaszholderny@gmail.pl")
+            .field.is-grouped 
+                .control 
+                    button(type="submit" formmethod="post"  class="button" ) Sign up!
